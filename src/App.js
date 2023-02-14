@@ -15,7 +15,7 @@ class App extends Comment{
     return (
       <div className="App">
         work
-        <button onClick={onClose}>Закрыть</button>
+        <button>Закрыть</button>
       </div>
     );
   }
