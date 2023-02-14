@@ -2,7 +2,7 @@ import './App.css';
 const tg = window.Telegram.WebApp;
 
 
-class APP extends Comment{
+class App extends Comment{
     render(){
       function App() {
         useEffect(()=>{
