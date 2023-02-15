@@ -4,6 +4,7 @@ import Button from '../Button/Button';
 
 const Header = () => {
     const {user,onClose} = useTelegram();
+    console.log(user);
     return (
         <div className={'header'}>
             <Button onClick={onClose}>Закрыть</Button>
