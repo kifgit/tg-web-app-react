@@ -18,7 +18,7 @@ const Form = ()=> {
     },[])
 
     useEffect(()=>{
-        //console.log(JSON.stringify(data));
+        console.log('!!!');
         tg.onEvent('mainButtonClicked', onSedData)
         return ()=>{
             tg.offEvent('mainButtonClicked', onSedData)
