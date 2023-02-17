@@ -39,7 +39,7 @@ const ProductList = ()=> {
                 text:'Купить ${getTotalPrice(newItems)}'
             })
         }
-        }
+
     }
     return (
         <div className={'list'}>
@@ -53,6 +53,6 @@ const ProductList = ()=> {
             
         </div>
     )
-
+}
 
 export default ProductList;
