@@ -14,14 +14,14 @@ const Form = ()=> {
             street,
             subject
         }
-        Telegram.WebApp.sendData(JSON.stringify(data));
-    },[])
+        tg.sendData(JSON.stringify(data));
+    },[country,street,subject])
 
     useEffect(()=>{
         
-        Telegram.WebApp.onEvent('mainButtonClicked', onSendData)
+        tg.onEvent('mainButtonClicked', onSendData)
         return ()=>{
-            Telegram.WebApp.offEvent('mainButtonClicked', onSendData)
+            tg.offEvent('mainButtonClicked', onSendData)
         }
     },[])
 
