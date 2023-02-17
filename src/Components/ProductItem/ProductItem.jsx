@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from "../Button/Button";
+import Button from '../Button/Button';
 import './ProductItem.css';
 
 const ProductItem = ({product,className, onAdd}) =>{
@@ -14,9 +14,9 @@ const ProductItem = ({product,className, onAdd}) =>{
             <div className={'price}'}>
                 <span>Стоимость: <b>{product.price}</b></span>
             </div>
-            <button className={'add-btn'} onClick={onAddHandler}>
+            <Button className={'add-btn'} onClick={onAddHandler}>
                 Добавить в корзину
-            </button>
+            </Button>
         </div>
     )
 }
