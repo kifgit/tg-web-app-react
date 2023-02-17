@@ -18,7 +18,7 @@ const Form = ()=> {
     },[])
 
     useEffect(()=>{
-        tg.MainButton.hide();
+        
         tg.onEvent('mainButtonClicked', onSedData)
         return ()=>{
             tg.offEvent('mainButtonClicked', onSedData)
@@ -27,7 +27,9 @@ const Form = ()=> {
 
     useEffect( () =>{
         tg.MainButton.setParams({
-            text: 'Отправить данные'
+            text: 'Отправить данные',
+            onClick: onSedData()
+
         },[])
     })
 
