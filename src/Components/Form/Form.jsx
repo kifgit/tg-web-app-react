@@ -15,12 +15,12 @@ const Form = ()=> {
             subject
         }
         tg.sendData(JSON.stringify(data));
-    })
+    },[])
 
     useEffect(()=>{
         tg.onEvent('mainButtonClicked', onSedData)
         return ()=>{
-            tg.onEvent('mainButtonClicked', onSedData)
+            tg.offEvent('mainButtonClicked', onSedData)
         }
     },[])
 
