@@ -18,7 +18,7 @@ const Form = ()=> {
     },[])
 
     useEffect(()=>{
-        console.log('!!!');
+        tg.MainButton.hide();
         tg.onEvent('mainButtonClicked', onSedData)
         return ()=>{
             tg.offEvent('mainButtonClicked', onSedData)
